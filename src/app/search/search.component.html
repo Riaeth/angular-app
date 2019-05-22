@@ -1,0 +1,7 @@
+
+  <form>
+    <input [attr.placeholder]="placeHolder" [(ngModel)]="entrada" name="nombre">
+    <button (click)="search()">{{buttonLabel}}</button>
+    <p>Parametro de busqueda: {{entrada}}</p>
+    <p>Resultado: {{result}} </p>
+  </form>

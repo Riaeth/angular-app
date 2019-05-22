@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-app';
-  inputName: String;
+
+
+  procesar(mensaje: string) {
+    alert(mensaje);
+  }
 }
