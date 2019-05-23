@@ -9,6 +9,8 @@ import { SearchModule } from './search/search.module';
 import { ListaOwnersComponent } from './owner/lista-owners/lista-owners.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { OwnerComponent } from './owner/owner/owner.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {MatFormFieldModule, MatInputModule} from '@angular/material';
 
 @NgModule({
   declarations: [

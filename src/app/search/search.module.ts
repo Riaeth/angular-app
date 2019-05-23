@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormSearchComponent } from './form-search/form-search.component';
 import { FormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {MatFormFieldModule, MatInputModule} from '@angular/material';
 
 
 @NgModule({
@@ -10,7 +11,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
   imports: [
     CommonModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports: [
     FormSearchComponent

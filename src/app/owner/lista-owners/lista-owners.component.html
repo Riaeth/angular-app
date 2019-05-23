@@ -1,5 +1,5 @@
 <ul style="width: 20%; display:inline-table;">
     <li *ngFor="let owner of owners; let i = index;">
-      {{owner.firstName}} {{owner.lastName}} - {{owner.city}}
+      <app-owner [datos]="owner"></app-owner>
     </li>
   </ul>

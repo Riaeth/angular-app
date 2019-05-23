@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { OwnerServiceService } from '../owner-service.service';
 
 
@@ -8,8 +8,9 @@ import { OwnerServiceService } from '../owner-service.service';
   styleUrls: ['./owner.component.css']
 })
 export class OwnerComponent implements OnInit {
+  @Input() datos;
 
-  constructor(private service: OwnerServiceService) { }
+  constructor() { }
 
   ngOnInit() {
   }

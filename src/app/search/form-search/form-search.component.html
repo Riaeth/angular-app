@@ -1,5 +1,7 @@
 <form>
-    <input [attr.placeholder]="placeHolder" [(ngModel)]="entrada" name="nombre">
+    <mat-form-field>
+    <input matInput [attr.placeholder]="placeHolder" [(ngModel)]="entrada" name="nombre">
+    </mat-form-field>
     <button (click)="search()">{{buttonLabel}}</button>
     <p>Parametro de busqueda: {{entrada}}</p>
     <p>Resultado: {{result}} </p>
