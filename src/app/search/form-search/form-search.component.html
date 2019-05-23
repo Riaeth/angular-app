@@ -1,6 +1,6 @@
 <form #contactForm="ngForm">
-  <mat-form-field>
-    <input matInput [attr.placeholder]="placeHolder" [(ngModel)]="entrada" name="nombre" #name>
+  <mat-form-field class="example-full-width">
+    <input matInput [placeholder]="placeHolder" [(ngModel)]="entrada" name="nombre" #name>
   </mat-form-field>
   <button (click)="search()">{{buttonLabel}}</button>
   <p>Parametro de busqueda: {{entrada}}</p>
