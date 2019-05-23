@@ -11,12 +11,14 @@ import {  HttpClientModule } from '@angular/common/http';
 import { OwnerComponent } from './owner/owner/owner.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import {MatFormFieldModule, MatInputModule} from '@angular/material';
+import { DetailedOwnerComponent } from './owner/detailed-owner/detailed-owner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaOwnersComponent,
-    OwnerComponent
+    OwnerComponent,
+    DetailedOwnerComponent
   ],
   imports: [
     BrowserModule,

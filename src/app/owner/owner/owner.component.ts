@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { OwnerServiceService } from '../owner-service.service';
+import { Owner } from 'src/app/models/owner';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,11 +10,12 @@ import { OwnerServiceService } from '../owner-service.service';
   styleUrls: ['./owner.component.css']
 })
 export class OwnerComponent implements OnInit {
-  @Input() datos;
+  @Input() datos: Owner;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+
 
 }

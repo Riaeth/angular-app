@@ -1,0 +1,28 @@
+<h2>Owner Informacion</h2>
+
+
+
+<table *ngIf="datos" class="table table-striped">
+
+  <tr>
+    <th colspan="2">
+      <img src="http://lorempixel.com/100/100/people/{{datos.id}}">
+    </th>
+  </tr>
+  <tr>
+    <th>Nombre</th>
+    <td><b>{{datos.firstName}} {{datos.lastName}}</b></td>
+  </tr>
+  <tr>
+    <th>Direcion</th>
+    <td>{{datos.address}}</td>
+  </tr>
+  <tr>
+    <th>Ciudad</th>
+    <td>{{datos.city}}</td>
+  </tr>
+  <tr>
+    <th>Telefono</th>
+    <td>{{datos.telephone}}</td>
+  </tr>
+</table>

@@ -6,9 +6,16 @@
   <img width="300" alt="Angular Logo"
     src="https://avatars0.githubusercontent.com/u/17955142?s=280&v=4">
 
+    <ul>
+        <li><a routerLink="/" routerLinkActive="active" >Volver</a></li>
+        <li><a routerLink="/search" routerLinkActive="active" >Busqueda</a></li>
+        <li><a routerLink="/owners" routerLinkActive="active" >Owners</a></li>
+    </ul>
+
+  <!-- 
   <app-form-search [placeHolder]="'¿Que buscas?'" [buttonLabel]="'Buscar'" (salida)="procesar($event)"></app-form-search>
   
-  <app-lista-owners></app-lista-owners>
+  <app-lista-owners></app-lista-owners> -->
+  <router-outlet></router-outlet>
 </div>
 
-<router-outlet></router-outlet>
