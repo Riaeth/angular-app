@@ -8,11 +8,13 @@ import { TestService } from './test/test.service';
 import { SearchModule } from './search/search.module';
 import { ListaOwnersComponent } from './owner/lista-owners/lista-owners.component';
 import {  HttpClientModule } from '@angular/common/http';
+import { OwnerComponent } from './owner/owner/owner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaOwnersComponent
+    ListaOwnersComponent,
+    OwnerComponent
   ],
   imports: [
     BrowserModule,

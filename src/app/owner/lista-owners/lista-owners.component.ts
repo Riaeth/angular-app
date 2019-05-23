@@ -8,14 +8,12 @@ import { OwnerServiceService } from '../owner-service.service';
 })
 export class ListaOwnersComponent implements OnInit {
 
-  owners;
+  public owners;
 
   constructor(private service: OwnerServiceService) { }
 
   ngOnInit() {
-    this.service.getOwners().subscribe(resp => {
-      this.owners = resp;
-    });
+    this.service.getOwners().subscribe(data => { this.owners = data; });
   }
 
 }
