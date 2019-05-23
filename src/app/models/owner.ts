@@ -2,7 +2,7 @@ export interface Owner {
     id: number;
     firstName: string;
     lastName: string;
-    addres: string;
+    address: string;
     city: string;
     telephone: string;
     pets;

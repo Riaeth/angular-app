@@ -1,0 +1,35 @@
+<div  style="align-content: flex-start">  
+  <form class="form-horizontal" #ownerForm="ngForm" (ngSubmit)="onSubmit(ownerForm.value)">
+    <div>
+      <label for="firstname">Nombre</label><br>
+      <input type="text" class="form-control" required [(ngModel)]="owner.firstName" name="firstName" #name="ngModel">
+      <div [hidden]="name.valid || name.pristine" class="alert alert-danger">Nombre Requerido</div>
+    </div>
+
+    <div>
+      <label for="lastname">Apellido</label>
+      <input type="text" class="form-control" required [(ngModel)]="owner.lastName" name="lastName" #lastname="ngModel">
+      <div [hidden]="lastname.valid || lastname.pristine" class="alert alert-danger">Apellido Requerido</div>
+    </div>
+
+    <div>
+      <label for="address">Direcion</label>
+      <input type="text" class="form-control" required [(ngModel)]="owner.address" name="address" #address="ngModel">
+      <div [hidden]="address.valid || address.pristine" class="alert alert-danger">Direcion Requerida</div>
+    </div>
+
+    <div>
+      <label for="city">Ciudad</label>
+      <input type="text" class="form-control" required [(ngModel)]="owner.city" name="city" #city="ngModel">
+      <div [hidden]="city.valid || city.pristine" class="alert alert-danger">Ciudad Requerida</div>
+    </div>
+
+    <div>
+      <label for="telephone">Telefono</label>
+      <input type="text" class="form-control" required [(ngModel)]="owner.telephone" name="telephone" #phone="ngModel">
+      <div [hidden]="phone.valid || phone.pristine" class="alert alert-danger">Telefono Requerida</div>
+    </div>
+
+    <button type="submit" [disabled]='ownerForm.invalid'>Enviar</button>
+  </form>
+</div>

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { FormSearchComponent } from './search/form-search/form-search.component';
 import { ListaOwnersComponent } from './owner/lista-owners/lista-owners.component';
 import { DetailedOwnerComponent } from './owner/detailed-owner/detailed-owner.component';
+import { FormOwnerComponent } from './components/form-owner/form-owner.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,9 @@ const routes: Routes = [
   {
     path: 'owners/:id',
     component: DetailedOwnerComponent
+  },{
+    path: 'owners-add',
+    component: FormOwnerComponent
   }
 
 ];
